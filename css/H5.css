@@ -1,0 +1,124 @@
+/* H5对象的全局样式 */
+/* H5对象的全局样式 */
+.h5{
+    height: 100%;
+}
+.h5_page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image:-webkit-linear-gradient(to top, #1f2228,#2b215c);
+    background-image:linear-gradient(to top,#1f2228, #2b215c);
+    font-size: 12px;
+
+    /*background-image: url(../img/bg1.png);*/
+    /*background-repeat: repeat;*/
+}
+/* 基本图文组件样式 */
+.h5_component{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+body{padding: 0px;margin: 0px; background-color: #322c33;}
+/*.h5_page_face{*/
+    /*background-image: url(../img/face_bg.png);*/
+    /*background-size:cover;*/
+/*}*/
+.h5_component_name_desc{
+    color:#f3d7b5;
+    font-size: 16px;
+    -webkit-transition: all 1s;
+    text-indent: 30px;
+    display: block;
+    line-height: 30px;
+}
+.h5_component_name_caption{
+    background-image: url(../img/page_caption_bg.png);
+    width: 283px;
+    height: 155px;
+    text-align: center;
+    line-height: 140px;
+    font-size: 20px;
+    color: #fff;
+    background-position: right;
+}
+.h5_component_flag .flagImg{
+    position: absolute;}
+.flagImg{
+    -webkit-animation:rock 2s;
+}
+@-webkit-keyframes rock{
+    0%{ transform:scale(0.5)}
+    50%{ transform:scale(1.5)}
+    100%{ transform:scale(1)}
+}
+.h5_component_name_back{
+    top: 30px;
+    -webkit-animation:back 2s infinite 2s;
+}
+
+@-webkit-keyframes back{
+    50%{ top: 20px; }
+}
+.h5_component_name_slogan{
+    -webkit-animation:rock 2s infinite 1s;
+    font-size: 24px;
+    color:#ff5900;
+}
+@-webkit-keyframes rock{
+    0%{ transform:rotate(0deg)}
+    5%{ transform:rotate(3deg)}
+    10%{ transform:rotate(-4deg)}
+    15%{ transform:rotate(3deg)}
+    20%{ transform:rotate(-2deg)}
+    25%{ transform:rotate(1deg)}
+    30%{ transform:rotate(-1deg)}
+    70%{ transform:rotate(0deg)}
+    100%{ transform:rotate(0deg)}
+}
+/*移动端适配 width|height|font-size = 视觉稿量出来的值 / 100rem;@lbl*/
+/*@media screen and (max-width:359px) and (min-width:320px) {*/
+    /*html{*/
+        /*font-size: 50px !important;*/
+    /*}*/
+/*}*/
+/*@media screen and (max-width:374px) and (min-width:360px) {*/
+    /*html{*/
+        /*font-size: 56.25px !important;*/
+    /*}*/
+/*}*/
+/*@media screen and (max-width:413px) and (min-width:375px) {*/
+    /*html{*/
+        /*font-size: 58.5px !important;*/
+    /*}*/
+/*}*/
+/*@media screen and (max-width:639px)  and (min-width:414px){*/
+    /*html{*/
+        /*font-size: 64.6px !important;*/
+    /*}*/
+/*}*/
+/*@media screen and (min-width:640px) {*/
+    /*html{*/
+        /*font-size: 100px !important;*/
+    /*}*/
+    /*.h5{width: 640px;margin: auto;}*/
+
+/*}*/
+
+@media screen and (max-width:361px) and (min-width:320px) {
+    .h5_component_name_desc{
+        height: 90px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        -webkit-line-clamp:3;
+    }
+}
+@media screen and (min-width:640px) {
+.h5{width: 375px;margin: auto;}
+}
+canvas{padding: 0px;margin: 0px;display: block;}
